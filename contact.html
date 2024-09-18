@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="./styleMain.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- google-font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABkCAYAAAA8AQ3AAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU4RjU2QUM1MTA5QzExRUY5M0E0QjkyM0YwQUQxOEJGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU4RjU2QUM2MTA5QzExRUY5M0E0QjkyM0YwQUQxOEJGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NThGNTZBQzMxMDlDMTFFRjkzQTRCOTIzRjBBRDE4QkYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NThGNTZBQzQxMDlDMTFFRjkzQTRCOTIzRjBBRDE4QkYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6q1v0PAAAKiElEQVR42uydi3Hq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"
+                    alt="logo">
+
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Service</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hire">
+                <button><a href="./contact.html"> Hire Me <i class="fa-brands fa-hire-a-helper"></i> </a></button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="contactpage">
+            <p id="top">contact</p>
+            <h1>Get in Touch with Me!</h1>
+
+            <div class="contactdetail">
+                <div class="contactinfo">
+                    <div class="office">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="text1">Our Office:</p>
+                        <p class="text2">Jurain, Dhaka Bangladesh</p>
+                    </div>
+
+                    <div class="phnum">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="text1">Contact Number:</p>
+                        <p class="text2">+1234321321</p>
+                    </div>
+
+                    <div class="email">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p class="text1">Email Us:</p>
+                        <p class="text2">websitename@mail.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contactform">
+                    <form action="">
+                        <div class="name-email">
+                            <label for="">
+                                Full Name: <br> 
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                Email Address: <br> 
+                                <input type="email">
+                            </label>
+
+                        </div>
+
+                        <div class="msg">
+                            <label for="">
+                                Your Message: <br> 
+                                <textarea name="" id=""></textarea>
+                            </label>
+
+                        </div>
+
+                        <div class="msg-btn">
+                            <button>Send me message <i class="fa-regular fa-envelope"></i></button>
+
+                        </div>
+
+
+
+
+                    </form>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- aboutcontent starts -->
+        <div class="aboutcontent">
+            <div class="abinfo">
+                <h1>Are You Ready to kickstart your project with a touch of magic?</h1>
+
+                <p>Reach out and let's make it happen ✨. I'm also available for full-time or Part-time opportunities to
+                    push the boundaries of design and deliver exceptional work.</p>
+
+                <button class="contact"><a href="./contact.html">Let's Talk <i
+                            class="fa-solid fa-arrow-down"></i></a></button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div>Copyright @2024, Bentos All Rights Reserved.</div>
+        <div>Crafted with ❤️ theme_ocean</div>
+    </footer>
+</body>
+
+</html>
